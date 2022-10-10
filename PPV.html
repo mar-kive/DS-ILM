@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Patterns in the Primes</title>
+<link rel="icon" type="image/x-icon" href="calculating.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<style>
+
+.w3-main{margin-left:300px; background-color: white; }
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: gray;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+</style>
+
+
+</head>
+<body >
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background-color: black;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px; background-color: gray;">Close Menu</a>
+  <div class="w3-container">
+    <br>
+    <img src="Math-clipart-png-8.png" width="200px" alt="image here">    
+    <h3 class="w3-padding-32 w3-text-white"><b>DISCRETE STRUCTURES 2<br>MODULE 1</b></h3>
+  </div>
+  <div class="sidenav">
+    <div class="overview"><a href="overview.html">Overview</a></div>
+    <button class="dropdown-btn">Study 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="BPD.html">Basic Properties of Divisibility</a>
+      <a href="PAC.html">Primes and Composite</a>
+      <a href="PP.html">Patterns in the Primes</a>
+      <a href="CDCMDT.html">Common Divisors, Common Multiples and Division Theorem</a>
+    </div>
+    <button class="dropdown-btn">Video Tutorials 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="BPDV.html">Basic Properties of Divisibility</a>
+      <a href="PACV.html">Primes and Composite</a>
+      <a href="PPV.html">Patterns in the Primes</a>
+      <a href="CDCMDTV.html">Common Divisors, Common Multiples and Division Theorem</a>
+    </div>
+    <button class="dropdown-btn">Quizzes 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="bpdquiz.html">Basic Properties of Divisibility</a>
+      <a href="pacq.html">Primes and Composite</a>
+      <a href="ppq.html">Patterns in the Primes</a>
+      <a href="cdcmdtq.html">Common Divisors, Common Multiples and Division Theorem</a>
+    </div>
+  </div>
+
+  <script>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+    
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+    </script>
+  
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-black w3-large w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-gray w3-margin-right" onclick="w3_open()">☰</a>
+  <span>DISCRETE STRUCTURES 2</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-medium" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main"  >
+
+  <!-- Patterns in the Primes -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge "><b>Patterns in the Primes</b></h1>
+    <hr style="width:600px;border:5px solid black" class="w3-round">
+   
+   
+  </div> 
+  <center>
+    <h3><b>Sieve of Eratosthenes</b></h3>
+    <video src="Sieve of Eratosthenes _ Journey into cryptography _ Computer Science _ Khan Academy.mp4" width="500px" controls></video>
+    <hr style="border:2px solid black" class="w3-round">
+    <h3><b>Fermat Numbers</b></h3>
+    <video src="Number Theory _ Fermat's Numbers_ Primes.mp4" width="500px" controls></video>
+    <hr style="border:2px solid black" class="w3-round">
+    <h3><b>Euler Theorem</b></h3>
+    <video src="The Legendary n^2+n+41 (why do we need math proofs_).mp4" width="500px" controls></video><br>
+    <h3><b>Euler Theorem</b></h3>
+    <video src="Number Theory _ Euler's Theorem Proof.mp4" width="500px" controls></video>
+    <hr style="border:2px solid black" class="w3-round">
+    <h3><b>Mersenne Prime</b></h3>
+    <video src="What is a Mersenne Prime_.mp4" width="500px" controls></video>
+  </center></div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="padding-right:58px"><p class="w3-right"><i>Developed by: Guzman et al. (2022)</i></p></div>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

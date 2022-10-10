@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Discrete Structures 2</title>
+<link rel="icon" type="image/x-icon" href="calculating.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Awesome Quiz App | CodingNepal</title>
+<link rel="stylesheet" href="style.css">
+<!-- FontAweome CDN Link for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<style>
+
+.w3-main{margin-left:300px; background-color: white; }
+
+
+</style>
+
+
+</head>
+<body >
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background-color: black;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px; background-color: gray;">Close Menu</a>
+  <div class="w3-container">
+    <br>
+    <img src="Math-clipart-png-8.png" width="200px" alt="image here">
+    <h3 class="w3-padding-32 w3-text-white"><b>DISCRETE STRUCTURES 2<br>MODULE 1</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    
+    <a href="#Showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Main Page</a> 
+    <a href="BPD.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Basic Properties of Divisibility</a> 
+    <a href="PAC.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Primes and Composites</a> 
+    <a href="PP.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Patterns in the Primes</a> 
+    <a href="CDCMDT.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Commond Divisors, Common Multiple and Division Theorem</a>
+      <p class="w3-bar-item  w3-text-white">Video Tutorials</p>
+    <a href="BPDV.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white"><blockquote>Basic Properties of Divisibility</blockquote></a>
+     <a href="PACV.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white"><blockquote>Primes and Composite</blockquote></a>
+      <a href="PPV.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white"><blockquote>Patterns in the Primes</blockquote></a>
+       <a href="CDCMDTV.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white"><blockquote>Common Divisors, Common Multiples, and Division Theorem</blockquote></a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-black w3-large w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-gray w3-margin-right" onclick="w3_open()">☰</a>
+  <span>DISCRETE STRUCTURES 2</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-medium" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main"  >
+
+  <!-- Header -->
+  <div class="w3-container" style="" id="overview">
+    <h1 class="w3-jumbo " style="margin-top: 50px;"><b>Basic Properties of Divisibility | Quiz</b></h1>
+        <!-- start Quiz button -->
+        <div class="start_btn"><button>Start Quiz</button></div>
+
+        <!-- Info Box -->
+        <div class="info_box">
+            <div class="info-title"><span>Some Rules of this Quiz</span></div>
+            <div class="info-list">
+                <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+                <div class="info">2. Once you select your answer, it can't be undone.</div>
+                <div class="info">3. You can't select any option once time goes off.</div>
+                <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+                <div class="info">5. You'll get points on the basis of your correct answers.</div>
+            </div>
+            <div class="buttons">
+                <button class="quit">Exit Quiz</button>
+                <button class="restart">Continue</button>
+            </div>
+        </div>
+    
+        <!-- Quiz Box -->
+        <div class="quiz_box">
+            <header>
+                <div class="title">Awesome Quiz Application</div>
+                <div class="timer">
+                    <div class="time_left_txt">Time Left</div>
+                    <div class="timer_sec">15</div>
+                </div>
+                <div class="time_line"></div>
+            </header>
+            <section>
+                <div class="que_text">
+                    <!-- Here I've inserted question from JavaScript -->
+                </div>
+                <div class="option_list">
+                    <!-- Here I've inserted options from JavaScript -->
+                </div>
+            </section>
+    
+            <!-- footer of Quiz Box -->
+            <footer>
+                <div class="total_que">
+                    <!-- Here I've inserted Question Count Number from JavaScript -->
+                </div>
+                <button class="next_btn">Next Que</button>
+            </footer>
+        </div>
+    
+        <!-- Result Box -->
+        <div class="result_box">
+            <div class="icon">
+                <i class="fas fa-crown"></i>
+            </div>
+            <div class="complete_text">You've completed the Quiz!</div>
+            <div class="score_text">
+                <!-- Here I've inserted Score Result from JavaScript -->
+            </div>
+            <div class="buttons">
+                <button class="restart">Replay Quiz</button>
+                <button class="quit">Quit Quiz</button>
+            </div>
+        </div>
+        
+        <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+        <script src="questions.js"></script>
+    
+        <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+        <script src="script.js"></script>    
+  </div>
+  </div>
+
+<!-- End page content -->
+</div>
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
